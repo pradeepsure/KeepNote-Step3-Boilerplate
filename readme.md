@@ -129,7 +129,7 @@ The folders and files you see in this repositories is how it is expected to be i
 
 1. Clone the base boilerplate in the folder **assignment-solution-step3** of your local machine
      
-    `git clone https://gitlab-cts.stackroute.in/KeepNote-Boilerplates/KeepNote-Step3-Boilerplate.git assignment-solution-step3`
+    `git clone https://gitlab-cts.stackroute.in/stack_java_keep/KeepNote-Step3-Boilerplate.git assignment-solution-step3`
 
 2. Navigate to assignment-solution-step3 folder
 
