@@ -57,8 +57,8 @@ The folders and files you see in this repositories is how it is expected to be i
     ├─src/main/java
             |
             ├── com.stackroute.keepnote.config               
-            |        └── ApplicationContextConfig.java         // This class will contain the application-context for the application.
-            |        └── WebApplicationInitializer.java        // This class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer class.
+            |        └── ApplicationContextConfig.java      // This class will contain the application-context for the application.
+            |        └── WebApplicationInitializer.java     // This class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer class.
             ├── com.stackroute.keepnote.controller
             |        └── CategoryController.java           // This class is responsible for processing all requests related to Category and builds an appropriate model and passes it to the view for rendering.
             |        └── NoteController.java               // This class is responsible for processing all requests related to Note and builds an appropriate model and passes it to the view for rendering.
@@ -86,15 +86,15 @@ The folders and files you see in this repositories is how it is expected to be i
             |        └── Reminder.java                     // This class will be acting as the data model for the Reminder Table in the database.
             |        └── User.java                         // This class will be acting as the data model for the User Table in the database.
             ├── com.stackroute.keepnote.service
-            |        └──CategoryService             // This interface contains all the behaviors of Category Model
-            |        └──CategoryServiceImpl             // This class implements the CategoryService interface. This class has to be annotated with @Service annotation.
-            |        └──NoteService                // This interface contains all the behaviors of Note Model
-            |        └──NoteServiceImpl            // This class implements the NoteService interface. This class has to be annotated with @Service annotation.
-            |        └──ReminderService            // This interface contains all the behaviors of Reminder Model
-            |        └──ReminderServiceImpl            // This class implements the ReminderService interface. This class has to be annotated with @Service annotation.
-            |        └──UserService                // This interface contains all the behaviors of Category Model
-            |        └──UserServiceImpl            // This class implements the UserService interface. This class has to be annotated with @Service annotation.
-    ├─src/test/java                            // All the test case classes are made available here
+            |        └──CategoryService                     // This interface contains all the behaviors of Category Model
+            |        └──CategoryServiceImpl                 // This class implements the CategoryService interface. This class has to be annotated with @Service annotation.
+            |        └──NoteService                         // This interface contains all the behaviors of Note Model
+            |        └──NoteServiceImpl                     // This class implements the NoteService interface. This class has to be annotated with @Service annotation.
+            |        └──ReminderService                     // This interface contains all the behaviors of Reminder Model
+            |        └──ReminderServiceImpl                 // This class implements the ReminderService interface. This class has to be annotated with @Service annotation.
+            |        └──UserService                         // This interface contains all the behaviors of Category Model
+            |        └──UserServiceImpl                     // This class implements the UserService interface. This class has to be annotated with @Service annotation.
+    ├─src/test/java                                         // All the test case classes are made available here
             ├── com.stackroute.keepnote.test.controller                  
             |        └── CategoryControllerTest.java
             |        └── NoteControllerTest.java
@@ -118,9 +118,9 @@ The folders and files you see in this repositories is how it is expected to be i
             |        └── UserServiceImplTest.java
             ├── .classpath                                    // This file is generated automatically while creating the project in eclipse
             ├── .hobbes                                       // Hobbes specific config options, such as type of evaluation schema, type of tech stack etc., Have saved a default values for convenience
-            ├── .project                                    // This is automatically generated by eclipse, if this file is removed your eclipse will not recognize this as your eclipse project. 
-            ├── pom.xml                                     // This is a default file generated by maven, if this file is removed your project will not get recognized in hobbes.
-            └── PROBLEM.md                                  // This files describes the problem of the assignment/project, you can provide as much as information and clarification you want about the project in this file
+            ├── .project                                      // This is automatically generated by eclipse, if this file is removed your eclipse will not recognize this as your eclipse project. 
+            ├── pom.xml                                       // This is a default file generated by maven, if this file is removed your project will not get recognized in hobbes.
+            └── PROBLEM.md                                    // This files describes the problem of the assignment/project, you can provide as much as information and clarification you want about the project in this file
 
 > PS: All lint rule files are by default copied during the evaluation process, however, if need to be customized, you should copy from this repo and modify in your project repo
 
@@ -129,7 +129,7 @@ The folders and files you see in this repositories is how it is expected to be i
 
 1. Clone the base boilerplate in the folder **assignment-solution-step3** of your local machine
      
-    `git clone https://gitlab-dev.stackroute.in/activity-stream-java/step3-boilerplate.git assignment-solution-step3`
+    `git clone https://gitlab-cts.stackroute.in/KeepNote-Boilerplates/KeepNote-Step3-Boilerplate.git assignment-solution-step3`
 
 2. Navigate to assignment-solution-step3 folder
 
@@ -143,7 +143,7 @@ The folders and files you see in this repositories is how it is expected to be i
 
 5. Add your new repository reference as remote
 
-     `git remote add origin https://gitlab.cts.com/{{yourUserName}}/assignment-solution-step3.git`
+     `git remote add origin https://gitlab-cts.stackroute.in/{{yourUserName}}/assignment-solution-step3.git`
 
      **Note: {{yourUserName}} should be replaced by your userName from gitlab**
 
