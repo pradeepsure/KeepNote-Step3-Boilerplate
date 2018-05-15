@@ -67,7 +67,7 @@ public class UserAuthenticationControllerTest {
 	@Test
 	public void testLogoutSuccess() throws Exception {
 
-		when(userService.validateUser(user.getUserId(), user.getUserPassword())).thenReturn(false);
+		when(userService.validateUser(user.getUserId(), user.getUserPassword())).thenReturn(true);
 		when(userService.getUserById(user.getUserId())).thenReturn(user);
 
 		mockMvc.perform(get("/logout").session(session)).andExpect(status().isOk()).andDo(print());
