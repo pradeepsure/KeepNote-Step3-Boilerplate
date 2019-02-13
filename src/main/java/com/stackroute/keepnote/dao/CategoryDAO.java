@@ -14,7 +14,7 @@ public interface CategoryDAO {
 
 	public boolean createCategory(Category category);
 
-	public boolean deleteCategory(int noteId);
+	public boolean deleteCategory(int categoryId);
 
 	public boolean updateCategory(Category category);
 

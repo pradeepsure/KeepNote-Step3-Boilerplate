@@ -2,6 +2,14 @@ package com.stackroute.keepnote.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Max;
+
 /*
  * The class "User" will be acting as the data model for the User Table in the database. 
  * Please note that this class is annotated with @Entity annotation. 
@@ -10,6 +18,8 @@ import java.util.Date;
  * Java object to recreate it as a table in your database.
  */
 
+@Entity
+@Table(name = "USER")
 public class User {
 
 	/*
@@ -21,46 +31,74 @@ public class User {
 	 * the user but should be always initialized with the system date
 	 */
 
-	public User() {
+	@Id
+	@Column(name = "user_id", length=20)	
+	private String userId;
 
+	@Column(name = "user_name")
+	private String userName;
+
+	@Column(name = "user_password")
+	private String userPassword;
+
+	@Column(name = "user_mobile")
+	private String userMobile;
+
+	@Column(name = "user_addeddate")
+	private Date userAddedDate;
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public User(String string, String string1, String string2, String string3, Date date) {
-
+	public User(String userId, String userName, String userPassword, String userMobile, Date userAddedDate) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.userMobile = userMobile;
+		this.userAddedDate = userAddedDate;
 	}
 
 	public String getUserId() {
-		return null;
+		return userId;
 	}
 
-	public void setUserId(String string) {
-
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 
-	public void setUserName(String string) {
+	public String getUserName() {
+		return userName;
+	}
 
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 	public String getUserPassword() {
-		return null;
-
+		return userPassword;
 	}
 
-	public void setUserPassword(String string) {
-
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
 
 	public String getUserMobile() {
-		return null;
-
+		return userMobile;
 	}
 
-	public void setUserMobile(String string) {
-
+	public void setUserMobile(String userMobile) {
+		this.userMobile = userMobile;
 	}
 
-	public void setUserAddedDate(Date date) {
+	public Date getUserAddedDate() {
+		return userAddedDate;
+	}
 
+	public void setUserAddedDate(Date userAddedDate) {
+		this.userAddedDate = userAddedDate;
 	}
 
 }
